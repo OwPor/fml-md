@@ -116,6 +116,16 @@ fml serve
 
 Then open your browser to http://localhost:8000/
 
+## Web Interface Screenshots
+
+The FML web interface provides a live editor and preview:
+
+![FML Web Interface](assets/images/web.png)
+
+![FML Web Interface with Valid Document](assets/images/web1.png)
+
+![FML Web Interface with Error](assets/images/web2.png)
+
 ## Why FML?
 
 Because regular markup languages are too predictable. Embrace the mathematical harmony of Fibonacci in your documents!
