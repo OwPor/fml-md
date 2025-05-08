@@ -161,10 +161,16 @@ class FMLContinuousParser:
                     error_msg = f"Decreasing indentation is not allowed. You can only reset to 0 spaces or increase to the next Fibonacci number. (Current: {current_indent}, Your indentation: {indentation})"
                     raise FMLError(f"Line {i}: {error_msg}")
                 else:
-                    # Invalid indentation (not a Fibonacci number or not the next one)
-                    expected = self._get_next_fibonacci(current_indent)
-                    error_msg = f"{self.random.choice(self.ERROR_MESSAGES)} Try {expected} spaces instead of {indentation}. (Current: {current_indent}, Next: {expected})"
-                    raise FMLError(f"Line {i}: {error_msg}")
+                    # Check if the indentation is a Fibonacci number but not the next one in sequence
+                    if self._is_fibonacci(indentation):
+                        expected = self._get_next_fibonacci(current_indent)
+                        error_msg = f"You can't skip Fibonacci numbers! After {current_indent} spaces, you must use exactly {expected} spaces, not {indentation}. (Current: {current_indent}, Next: {expected})"
+                        raise FMLError(f"Line {i}: {error_msg}")
+                    else:
+                        # Not a Fibonacci number at all
+                        expected = self._get_next_fibonacci(current_indent)
+                        error_msg = f"{self.random.choice(self.ERROR_MESSAGES)} Try {expected} spaces instead of {indentation}. (Current: {current_indent}, Next: {expected})"
+                        raise FMLError(f"Line {i}: {error_msg}")
                 
                 # Update current indentation
                 current_indent = indentation
