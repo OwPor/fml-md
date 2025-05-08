@@ -1,0 +1,65 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+wheels/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.env/
+.venv/
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+nosetests.xml
+coverage.xml
+
+# Generated HTML files
+*.html
+!index.html
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+# Temporary extraction directory
+temp_extract/
+examples/user_example.fml
+
+# Test files
+test_*.py
+simple_test.py
+test_server.py
+
+# Backup and temporary files
+*.py.new
+*_new.py
+*_fixed.py
+server_fixed.py
+fml/server.py.new
+fml/server_new.py
