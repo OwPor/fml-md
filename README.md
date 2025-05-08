@@ -120,11 +120,11 @@ Then open your browser to http://localhost:8000/
 
 The FML web interface provides a live editor and preview:
 
-![FML Web Interface](assets/images/web.png)
+![FML Web Interface](https://raw.githubusercontent.com/OwPor/fml-md/main/assets/images/web.png)
 
-![FML Web Interface with Valid Document](assets/images/web1.png)
+![FML Web Interface with Valid Document](https://raw.githubusercontent.com/OwPor/fml-md/main/assets/images/web1.png)
 
-![FML Web Interface with Error](assets/images/web2.png)
+![FML Web Interface with Error](https://raw.githubusercontent.com/OwPor/fml-md/main/assets/images/web2.png)
 
 ## Why FML?
 
