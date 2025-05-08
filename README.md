@@ -69,7 +69,7 @@ pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://
 fml validate path/to/your/file.fml
 
 # Convert an FML file to HTML
-fml convert path/to/your/file.fml --output output.html
+fml convert path/to/your/file.fml output.html
 
 # Start the FML preview server
 fml serve
