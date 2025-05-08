@@ -24,16 +24,6 @@ def fibonacci(n):
   return fibonacci(n-1) + fibonacci(n-2)
 ```
 
-# The Fibonacci Spiral visualization
-The Golden Spiral
- *
-  **
-   ***
-     *****
-        ********
-             *************
-                     *********************
-
 # Nested content with increasing indentation
 Fibonacci Nesting
  Level 1 - One space
